@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Gagan ❤️ | From Gouri</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #fff8f5;
+            color: #4a2525;
+            overflow-x: hidden;
+        }
+
+        /* ---------- FLOATING HEARTS ---------- */
+
+        .heart {
+            position: fixed;
+            bottom: -30px;
+            font-size: 20px;
+            animation: floatUp 8s linear infinite;
+            opacity: 0.5;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            20% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* ---------- HERO ---------- */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            background:
+                radial-gradient(circle at top left, #ffe1df, transparent 35%),
+                radial-gradient(circle at bottom right, #f7d9c9, transparent 35%),
+                #fff8f5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 750px;
+        }
+
+        .rakhi-icon {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 20px auto;
+            animation: gentleFloat 3.5s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rakhi-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 20px;
+            filter: drop-shadow(0px 10px 20px rgba(143, 48, 48, 0.25));
+        }
+
+        @keyframes gentleFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(2deg); }
+        }
+
+        .small-title {
+            font-size: 17px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #9a5555;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 9vw, 90px);
+            color: #7d2929;
+            margin-bottom: 15px;
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            line-height: 1.7;
+            color: #6b4444;
+            margin-bottom: 35px;
+        }
+
+        .start-btn, .surprise-btn, .quiz-opt-btn {
+            border: none;
+            padding: 16px 32px;
+            border-radius: 50px;
+            background: #8f3030;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(100, 30, 30, 0.25);
+            transition: 0.3s;
+        }
+
+        .start-btn:hover, .surprise-btn:hover, .quiz-opt-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+            background: #702323;
+        }
+
+        /* ---------- SECTIONS ---------- */
+
+        section {
+            min-height: 80vh;
+            padding: 90px 7%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .section-container {
+            width: 100%;
+            max-width: 1100px;
+            text-align: center;
+        }
+
+        .section-label {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #a25a5a;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(35px, 6vw, 55px);
+            color: #722929;
+            margin-bottom: 25px;
+        }
+
+        .section-text {
+            max-width: 750px;
+            margin: auto;
+            font-size: 19px;
+            line-height: 1.9;
+            color: #674949;
+        }
+
+        /* ---------- OUR BOND ---------- */
+
+        .bond { background: #fff; }
+
+        .bond-card {
+            margin: 45px auto 0;
+            max-width: 800px;
+            padding: 45px;
+            border-radius: 25px;
+            background: linear-gradient(145deg, #fff7f3, #ffe9e5);
+            box-shadow: 0 20px 60px rgba(100, 40, 40, 0.1);
+        }
+
+        .bond-card p {
+            font-size: 21px;
+            line-height: 2;
+        }
+
+        .highlight {
+            color: #8f3030;
+            font-weight: bold;
+        }
+
+        /* ---------- BROTHER STATS ---------- */
+
+        .stats { background: #fff4ef; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+            margin-top: 45px;
+        }
+
+        .stat {
+            background: white;
+            padding: 25px 12px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(100, 40, 40, 0.08);
+            transition: 0.3s;
+        }
+
+        .stat:hover { transform: translateY(-8px); }
+
+        .stat-icon {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .stat-number {
+            font-size: 26px;
+            font-weight: bold;
+            color: #8f3030;
+        }
+
+        .stat-name {
+            margin-top: 8px;
+            color: #684848;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        /* ---------- MEMORIES ---------- */
+
+        .memories { background: #fff; }
+
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .memory-card {
+            background: #fff8f5;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(80, 30, 30, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .memory-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .memory-media {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            background-color: #f7d9c9;
+        }
+
+        .memory-caption {
+            padding: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .video-card {
+            margin-top: 40px;
+            background: #fff8f5;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(80, 30, 30, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .video-player {
+            width: 100%;
+            max-height: 480px;
+            border-radius: 18px;
+            background: #000;
+            display: block;
+        }
+
+        /* ---------- FUNNY SIBLING QUIZ SECTION ---------- */
+
+        .quiz-section {
+            background: #fff8f5;
+        }
+
+        .quiz-card {
+            background: white;
+            max-width: 650px;
+            margin: 30px auto 0;
+            padding: 40px 30px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(100, 40, 40, 0.08);
+        }
+
+        .quiz-q-title {
+            font-size: 24px;
+            color: #722929;
+            margin-bottom: 25px;
+        }
+
+        .quiz-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .quiz-opt-btn {
+            flex: 1;
+            min-width: 160px;
+            background: #fff0f3;
+            color: #722929;
+            border: 2px solid #ffccd5;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .quiz-opt-btn:hover {
+            background: #8f3030;
+            color: white;
+            border-color: #8f3030;
+        }
+
+        .quiz-feedback {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #8f3030;
+            font-weight: bold;
+            min-height: 30px;
+        }
+
+        /* ---------- MESSAGES ---------- */
+
+        .messages { background: #fff4ef; }
+
+        .message-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .message-card {
+            padding: 35px 25px;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(80, 30, 30, 0.08);
+        }
+
+        .message-card h3 {
+            color: #8f3030;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        .message-card p {
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        /* ---------- SECRET ---------- */
+
+        .secret {
+            min-height: 100vh;
+            background: radial-gradient(circle at center, #4c1717, #210909);
+            color: white;
+        }
+
+        .secret .section-label { color: #e9aaaa; }
+        .secret .section-title { color: white; }
+
+        .secret-text {
+            color: #f3dede;
+            font-size: 19px;
+            line-height: 1.8;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .gift-box {
+            font-size: 110px;
+            margin: 40px 0;
+            cursor: pointer;
+            animation: giftPulse 2s infinite;
+        }
+
+        @keyframes giftPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+
+        /* ---------- FINAL SURPRISE ---------- */
+
+        #finalSurprise {
+            display: none;
+            min-height: 100vh;
+            background: radial-gradient(circle at center, #fff4ef, #ffd9d2);
+            text-align: center;
+        }
+
+        .final-content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .rakhi-tying-box {
+            background: white;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(100, 40, 40, 0.1);
+            margin: 25px auto;
+            max-width: 450px;
+        }
+
+        .rakhi-tying-img {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            display: block;
+        }
+
+        .final-message {
+            font-size: 24px;
+            line-height: 2;
+            color: #5e3535;
+            margin: 25px auto;
+        }
+
+        .signature {
+            font-size: 28px;
+            color: #8f3030;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .footer {
+            padding: 30px;
+            text-align: center;
+            background: #210909;
+            color: #dcbebe;
+        }
+
+        /* ---------- MUSIC ---------- */
+
+        .music-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 100;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: none;
+            background: #8f3030;
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+
+        .music-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+
+        @media (max-width: 1024px) {
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .memory-grid {
+                grid-template-columns: 1fr;
+            }
+            .memory-media {
+                height: 420px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            section { padding: 70px 6%; }
+            .message-grid { grid-template-columns: 1fr; }
+            .bond-card { padding: 30px 20px; }
+            .hero-subtitle { font-size: 18px; }
+        }
+
+        @media (max-width: 600px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .stat { padding: 20px 8px; }
+            .stat-number { font-size: 22px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:25%; animation-delay:2s;">🤍</div>
+    <div class="heart" style="left:45%; animation-delay:4s;">❤️</div>
+    <div class="heart" style="left:65%; animation-delay:1s;">💗</div>
+    <div class="heart" style="left:85%; animation-delay:3s;">❤️</div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="rakhi-icon">
+                <img src="rakhi_art.jpg" alt="Aesthetic Rakhi" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\' viewBox=\'0 0 200 200\'><circle cx=\'100\' cy=\'100\' r=\'80\' fill=\'%23ffd700\'/><circle cx=\'100\' cy=\'100\' r=\'60\' fill=\'%238f3030\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'white\' font-size=\'30\'>🪢</text></svg>';">
+            </div>
+
+            <div class="small-title">A little surprise from Gouri</div>
+            <h1>For Gagan ❤️</h1>
+            <p class="hero-subtitle">
+                This isn't just another Raksha Bandhan wish...
+                <br>
+                It's a little piece of my heart, made especially for you.
+            </p>
+            <button class="start-btn" onclick="document.getElementById('bond').scrollIntoView()">
+                Open Your Surprise 🎁
+            </button>
+        </div>
+    </section>
+
+
+    <!-- ================= OUR BOND ================= -->
+
+    <section class="bond" id="bond">
+        <div class="section-container">
+            <div class="section-label">Gagan & Gouri</div>
+            <h2 class="section-title">More Than Just Brother & Sister ❤️</h2>
+            <p class="section-text">
+                You may be only one year younger than me,
+                but somehow you've managed to become one of
+                the most important people in my life.
+            </p>
+
+            <div class="bond-card">
+                <p>
+                    You get <span class="highlight">irritated very fast</span> 😂,
+                    we annoy each other, and we probably have
+                    our fair share of arguments...
+                    <br><br>
+                    But whenever we're alone,
+                    we somehow have <span class="highlight">so much to talk about.</span> ❤️
+                    <br><br>
+                    And behind all those little fights,
+                    I know one thing for sure —
+                    you care, you help,
+                    and you're always my brother.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= BROTHER STATS ================= -->
+
+    <section class="stats">
+        <div class="section-container">
+            <div class="section-label">Official Brother Report 😂</div>
+            <h2 class="section-title">Gagan's Statistics</h2>
+
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-icon">🤪</div>
+                    <div class="stat-number">#1</div>
+                    <div class="stat-name">Teasing Partner In The House</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-icon">😎</div>
+                    <div class="stat-number">10/10</div>
+                    <div class="stat-name">Good Looking Genes</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-icon">🦵</div>
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-name">Expert Leg Puller</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-icon">🥹</div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-name">Secretly Soft-Hearted</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-icon">❤️</div>
+                    <div class="stat-number">100/100</div>
+                    <div class="stat-name">Best Brother In The World</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section class="memories">
+        <div class="section-container">
+            <div class="section-label">Our Little Memories</div>
+            <h2 class="section-title">Some Moments, Forever Ours 📸</h2>
+            <p class="section-text">
+                Photos change with time. Memories don't.
+            </p>
+
+            <div class="memory-grid">
+                <div class="memory-card">
+                    <img id="img1" src="i1.jpeg" alt="Gagan" class="memory-media" onerror="this.onerror=null; this.src='i1.jpg';">
+                    <div class="memory-caption">
+                        Gagan being himself ✨
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <img id="img2" src="i2.jpeg" alt="Gouri and Gagan Traditional" class="memory-media" onerror="this.onerror=null; this.src='i2.jpg';">
+                    <div class="memory-caption">
+                        Twin energy in yellow 💛✨
+                    </div>
+                </div>
+
+                <div class="memory-card">
+                    <img id="img3" src="i3.jpeg" alt="Gouri and Gagan Outing" class="memory-media" onerror="this.onerror=null; this.src='i3.jpg';">
+                    <div class="memory-caption">
+                        Always up for little adventures together 🎡❤️
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video controls class="video-player" id="vid1">
+                    <source src="v1.mp4" type="video/mp4">
+                    Your browser does not support video play.
+                </video>
+                <p class="memory-caption" style="margin-top: 15px;">
+                    And here's Gagan busy making fun of me as usual! 😂❤️
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FUNNY 10-QUESTION SIBLING QUIZ ================= -->
+
+    <section class="quiz-section">
+        <div class="section-container">
+            <div class="section-label">Quick Sibling Showdown 🎯</div>
+            <h2 class="section-title">Who Is More Likely To...? 🤔</h2>
+            
+            <div class="quiz-card">
+                <div id="quiz-progress-label" style="font-size: 14px; color: #a25a5a; font-weight: bold; margin-bottom: 10px;">QUESTION 1 OF 10</div>
+                <div class="quiz-q-title" id="quiz-q-text">Who is Maa's favourite? 🌸</div>
+                
+                <div class="quiz-buttons">
+                    <button class="quiz-opt-btn" onclick="handleQuizAnswer('Gagan')">Gagan 🙋‍♂️</button>
+                    <button class="quiz-opt-btn" onclick="handleQuizAnswer('Gouri')">Gouri 🙋‍♀️</button>
+                </div>
+
+                <div class="quiz-feedback" id="quiz-feedback-text"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= THREE LANGUAGES ================= -->
+
+    <section class="messages">
+        <div class="section-container">
+            <div class="section-label">From My Heart</div>
+            <h2 class="section-title">Three Languages, One Bond ❤️</h2>
+
+            <div class="message-grid">
+                <div class="message-card">
+                    <h3>🇬🇧 English</h3>
+                    <p>
+                        “A brother may irritate you,
+                        argue with you and drive you crazy...
+                        but behind every fight is a bond
+                        that distance can never break.
+                        <br><br>
+                        No matter how far we are,
+                        you'll always have a special place
+                        in my heart.”
+                    </p>
+                </div>
+
+                <div class="message-card">
+                    <h3>🌸 ಕನ್ನಡ</h3>
+                    <p>
+                        “ನಮ್ಮ ನಡುವೆ ಜಗಳಗಳಿರಬಹುದು,
+                        ನೀನು ಬೇಗ ಕೋಪ ಮಾಡಿಕೊಳ್ಳಬಹುದು,
+                        ನಾನು ನಿನ್ನನ್ನು ಕಾಡಬಹುದು...
+                        <br><br>
+                        ಆದರೆ ನಮ್ಮಿಬ್ಬರ ನಡುವಿನ ಈ ಬಂಧ
+                        ಯಾವತ್ತಿಗೂ ಬದಲಾಗುವುದಿಲ್ಲ.
+                        <br><br>
+                        ದೂರದಲ್ಲಿದ್ದರೂ ನೀನು ಯಾವಾಗಲೂ
+                        ನನ್ನ ಪ್ರೀತಿಯ ತಮ್ಮನೇ.”
+                    </p>
+                </div>
+
+                <div class="message-card">
+                    <h3>🇮🇳 Hindi Shayari</h3>
+                    <p>
+                        “रिश्ता हमारा थोड़ा नटखट सा है,
+                        कभी प्यार तो कभी तकरार सा है,
+                        <br><br>
+                        तू छोटा है मुझसे बस एक साल,
+                        मगर दिल के बहुत करीब है हर हाल।
+                        <br><br>
+                        दूरियाँ चाहे कितनी भी हो जाएँ,
+                        भाई-बहन की ये डोर कभी नहीं टूट पाए। ❤️”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECRET ================= -->
+
+    <section class="secret">
+        <div class="section-container">
+            <div class="section-label">Wait...</div>
+            <h2 class="section-title">There's One More Thing...</h2>
+            <p class="secret-text">
+                Since I can't be there beside you this Raksha Bandhan,
+                I wanted to leave something here for you.
+                <br><br>
+                But you have to open it yourself. 😉
+            </p>
+
+            <div class="gift-box" onclick="openSurprise()">🎁</div>
+
+            <button class="surprise-btn" onclick="openSurprise()">
+                Open This ❤️
+            </button>
+        </div>
+    </section>
+
+
+    <!-- ================= FINAL SURPRISE ================= -->
+
+    <section id="finalSurprise">
+        <div class="final-content">
+            
+            <div class="rakhi-tying-box">
+                <div style="font-size: 14px; color: #8f3030; font-weight: bold; margin-bottom: 12px;">VIRTUAL RAKHI CEREMONY ✨</div>
+                <img src="rakhi_tying.jpg" alt="Rakhi Tying Ceremony" class="rakhi-tying-img" onerror="this.onerror=null; this.src='rakhi_tying.png';">
+                <div style="font-size: 14px; color: #6b4444; margin-top: 12px; font-style: italic;">Sending you love & virtual Rakhi blessings across the distance! 🪢❤️</div>
+            </div>
+
+            <div class="section-label">For My Brother</div>
+            <h2 class="section-title">Happy Raksha Bandhan, Gagan ❤️</h2>
+
+            <p class="final-message">
+                If I could be there today,
+                I'd tie this Rakhi on your wrist myself.
+                <br><br>
+                But until that day,
+                let this little website remind you
+                that distance doesn't change what you mean to me.
+                <br><br>
+                We may fight.
+                You may get irritated in approximately
+                <b>0.2 seconds</b>. 😂
+                <br><br>
+                But no matter where life takes us,
+                I'll always be your sister,
+                and you'll always be my little brother. ❤️
+            </p>
+
+            <div class="signature">
+                With love,<br>
+                Gouri ❤️
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        Made with ❤️ by Gouri for Gagan
+    </div>
+
+
+    <!-- MUSIC BUTTON -->
+
+    <button class="music-btn" onclick="toggleMusic()" id="musicButton">
+        🎵
+    </button>
+
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <script>
+        const quizData = [
+            {
+                q: "1. Who is Maa's favourite? 🌸",
+                feedback: "Obviously Gagan! You get away with everything! 😂"
+            },
+            {
+                q: "2. Who is Papa's favourite? 👨‍👧",
+                feedback: "Gouri, no competition here! Papa's girl forever! ✨"
+            },
+            {
+                q: "3. Who eats outside food more? 🍕",
+                feedback: "100% Gagan! Swiggy & Zomato know your exact order! 🍔"
+            },
+            {
+                q: "4. Who gets angry / irritated first? 😤",
+                feedback: "Gagan in 0.2 seconds flat! Faster than a rocket! 🚀😂"
+            },
+            {
+                q: "5. Who spends more money? 💸",
+                feedback: "Gagan! Money flies out of your pocket instantly! 🛍️"
+            },
+            {
+                q: "6. Who is more foodie? 😋",
+                feedback: "Gagan! We literally have video proof of you eating above! 🎥🍕"
+            },
+            {
+                q: "7. Who is more dramatic? 🎭",
+                feedback: "Gouri takes the Oscar for drama queen! 👑😂"
+            },
+            {
+                q: "8. Who loves to fight? 🥊",
+                feedback: "Both of us! It's our full-time official hobby! 💥"
+            },
+            {
+                q: "9. Who knows about each other more? 🧠",
+                feedback: "Gouri! I read your mind like an open book! 📖❤️"
+            },
+            {
+                q: "10. Who is good looking? ✨",
+                feedback: "Gagan & Gouri! Twin energy in yellow—we both got great genes! 😎💛"
+            }
+        ];
+
+        let currentQuizIdx = 0;
+
+        function handleQuizAnswer(choice) {
+            const feedbackEl = document.getElementById("quiz-feedback-text");
+            feedbackEl.innerText = quizData[currentQuizIdx].feedback;
+
+            setTimeout(() => {
+                currentQuizIdx++;
+                if (currentQuizIdx < quizData.length) {
+                    document.getElementById("quiz-progress-label").innerText = `QUESTION ${currentQuizIdx + 1} OF ${quizData.length}`;
+                    document.getElementById("quiz-q-text").innerText = quizData[currentQuizIdx].q;
+                    feedbackEl.innerText = "";
+                } else {
+                    document.getElementById("quiz-q-text").innerText = "Quiz Completed! Verdict: Best Sibling Duo Ever! 🥳✨";
+                    document.querySelector(".quiz-buttons").style.display = "none";
+                    feedbackEl.innerText = "Scroll down to unlock your secret gift box! 👇🎁";
+                }
+            }, 1800);
+        }
+
+        function openSurprise() {
+            const finalSection = document.getElementById("finalSurprise");
+            finalSection.style.display = "flex";
+            finalSection.scrollIntoView({ behavior: "smooth" });
+            createConfetti();
+
+            // Auto-start music if it isn't playing yet
+            if (!musicPlaying) {
+                toggleMusic();
+            }
+        }
+
+        let musicPlaying = false;
+
+        function toggleMusic() {
+            const music = document.getElementById("backgroundMusic");
+            const button = document.getElementById("musicButton");
+
+            if (musicPlaying) {
+                music.pause();
+                button.innerHTML = "🎵";
+                musicPlaying = false;
+            } else {
+                music.play()
+                    .then(() => {
+                        button.innerHTML = "🔊";
+                        musicPlaying = true;
+                    })
+                    .catch((error) => {
+                        console.log("Audio playback error:", error);
+                    });
+            }
+        }
+
+        function createConfetti() {
+            const symbols = ["❤️", "💗", "🌸", "✨", "🪢", "🎉"];
+
+            for (let i = 0; i < 40; i++) {
+                const confetti = document.createElement("div");
+                confetti.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+                confetti.style.position = "fixed";
+                confetti.style.left = Math.random() * 100 + "vw";
+                confetti.style.top = "-30px";
+                confetti.style.fontSize = (15 + Math.random() * 20) + "px";
+                confetti.style.zIndex = "9999";
+                confetti.style.pointerEvents = "none";
+
+                document.body.appendChild(confetti);
+
+                const duration = 2 + Math.random() * 4;
+
+                confetti.animate(
+                    [
+                        { transform: "translateY(0) rotate(0deg)", opacity: 1 },
+                        { transform: "translateY(110vh) rotate(720deg)", opacity: 0 }
+                    ],
+                    {
+                        duration: duration * 1000,
+                        easing: "ease-out"
+                    }
+                );
+
+                setTimeout(() => {
+                    confetti.remove();
+                }, duration * 1000);
+            }
+        }
+    </script>
+
+</body>
+</html>
